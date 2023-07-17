@@ -5,11 +5,11 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     return (
       <FeedbackContainer>
         {options.map(option => (
-         <FeedbackItem key={option}>
+        <FeedbackItem key={option}>
             <FeedbackBtn name={option} type="button" onClick={onLeaveFeedback}>
             {option}
             </FeedbackBtn>
-         </FeedbackItem>
+        </FeedbackItem>
         ))}
       </FeedbackContainer>
     );
